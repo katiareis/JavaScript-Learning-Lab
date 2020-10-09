@@ -1,4 +1,4 @@
-# aula_javascript-DIO
+# JavaScrip-Learning-Lab
 JavaScript Class - DIO
 
 Aulas de JavaScript da Digital Innovation One.
