@@ -1,6 +1,4 @@
-# JavaScrip-Learning-Lab
-JavaScript Class - DIO
+# JavaScript-Learning-Lab
 
-Aulas de JavaScript da Digital Innovation One.
 Introdução ao JavaScript e conceitos Básicos
 https://web.digitalinnovation.one/home
