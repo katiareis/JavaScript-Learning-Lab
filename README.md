@@ -1,2 +1,6 @@
 # aula_javascript-DIO
-Introdução ao JavaScript
+JavaScript Class - DIO
+
+Aulas de JavaScript da Digital Innovation One.
+Introdução ao JavaScript e conceitos Básicos
+https://web.digitalinnovation.one/home
