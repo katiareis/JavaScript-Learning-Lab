@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis - JavaScript</title>
+</head>
+<body>
+    <h2>Variáveis em JavaScript</h2>
+    <p>Em programação, variáveis são espaços que são utilizados para guardar dados(valores) na memória.</p>
+
+    <p>Variáveis ajudam a evitar a repetição desnecessária de código.</p>
+
+    <h2>Declarando uma variável</h2>
+
+    <p>Há três formas de declarar uma variável em JavaScript</p>
+    <ul>
+        <li>Usando a palavra reservada <em>var</em></li>
+        <li>Usando a palavra reservada <em>let</em></li>
+        <li>Usando a palavra reservada <em>const</em></li>
+    </ul>
+
+    <h3>Sintaxe</h3>
+    <p>PalavraReservada + nomeDaVariável = Valor</p>
+
+    <pre>
+        <code>
+        var x = 5;
+        var y = 6;
+        var z = x + y;
+        </code>
+    </pre>
+
+    <p>Sobre o exemplo acima:</p>
+
+    <ul>
+        <li>A variável x armazenou o valor 5 na memória</li>
+        <li>A variável y armazenou o valor 6 na memória</li>
+        <li>A variável z armazenou o valor 11 na memória</li>
+    </ul>
+    
+    <p id="exemplo"></p>
+    <script>
+        var x = 5;
+        var y = 6;
+        var z = x + y;
+        document.getElementById("exemplo").innerHTML =
+        "O valor na variável z é: " + z;
+    </script>
+
+    <p>Temos algumas regras para criar nome de variáveis:</p>
+    <ul>
+        <li>Não pode começar com número</li>
+        <li>Não pode ter caracteres especiais</li>
+        <li>Não pode utilizar acentos</li>
+        <li>Não pode utilizar espaços</li>
+        <li>Deve começar com letra minúscula e seguir o padrão camelCase, 
+        onde cada palavra é iniciada com maiúsculas e unidas sem espaços</li>
+    </ul>
+
+    <p>É muito importante utilizar nomes significativos nas variáveis, para facilitar a identificação</p>
+
+
+</body>
+<script src="exercicio01.js"></script>
+<script src="aula01.js"></script>
+</html>
