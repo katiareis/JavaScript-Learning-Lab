@@ -34,14 +34,14 @@ var ano = "2018";
 var age = 35;
 
 // Declare duas variáveis, uma com seu nome
-var name = "Katia";
+var meuNome = "Katia";
 
 // e outra com seu sobrenome e some as mesmas
 var sobrenome = "Reis";
 
-var nomeCompleto = nome + " " + sobrenome;
+var nomeCompleto = meuNome + " " + sobrenome;
 //ou
-var fullname = `${nome} ${sobrenome}`;
+var fullname = `${meuNome} ${sobrenome}`;
 
 console.log(nomeCompleto);
 console.log(fullname);
