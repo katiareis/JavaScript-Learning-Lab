@@ -1,0 +1,46 @@
+:root {
+  --background: #f4f4f4;
+  --primary-color: #000;
+  --secondary-color: #a0a0a0;
+  --tertiary-color: #fff;
+  --red: #ee3322;
+  --yellow: #ffee38;
+  --light-yellow: #ffee3850;
+  --blue: #0f65ef;
+  --light-gray: #f4f4f4;
+  --green: #39b26b;
+  --purple: #352f5b;
+  --light-purple: #423a6f;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background);
+}
+
+.container {
+  max-width: 600px;
+}
+
+.container h1 {
+  color: var(--primary-color);
+}
+
+input[type="text"],
+input[type="text"]:focus {
+  color: #fff;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+}
+
+.todos li {
+  background: var(--light-purple);
+}
+
+.delete {
+  cursor: pointer;
+}
