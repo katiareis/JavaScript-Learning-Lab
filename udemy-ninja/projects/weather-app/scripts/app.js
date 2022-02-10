@@ -4,6 +4,7 @@ const details = document.querySelector(".details");
 const time = document.querySelector("img.time");
 const icon = document.querySelector("img.icon");
 
+// Update html templates
 const updateUI = (data) => {
   // console.log(data);
   // const cityDetails = data.cityDetails;
@@ -24,14 +25,14 @@ const updateUI = (data) => {
   const iconSrc = `images/icons/${weather.WeatherIcon}.svg`;
   icon.setAttribute("src", iconSrc);
 
-  let timeSrc = null;
-  if (weather.IsDayTime) {
-    timeSrc = "images/day.svg";
-  } else {
-    timeSrc = "images/night.svg";
-  }
-
+  let timeSrc = weather.IsDayTime ? "images/day.svg" : "images/night.svg";
   time.setAttribute("src", timeSrc);
+  // let timeSrc = null;
+  // if (weather.IsDayTime) {
+  //   timeSrc = "images/day.svg";
+  // } else {
+  //   timeSrc = "images/night.svg";
+  // }
 
   //remove display none class if weather
   if (card.classList.contains("display-none")) {
@@ -39,6 +40,7 @@ const updateUI = (data) => {
   }
 };
 
+// City and weather request
 const updateCity = async (city) => {
   const cityDetails = await getCity(city);
   const weather = await getWeather(cityDetails.Key);
@@ -47,6 +49,7 @@ const updateCity = async (city) => {
   return { cityDetails, weather };
 };
 
+//Add event to submitter
 cityForm.addEventListener("submit", (e) => {
   //prevent default action
   e.preventDefault();
@@ -59,4 +62,14 @@ cityForm.addEventListener("submit", (e) => {
   updateCity(city)
     .then((data) => updateUI(data))
     .catch((err) => console.log(err));
+
+  // set local storage
+  localStorage.setItem("city", city);
 });
+
+// Update local storage
+if (localStorage.getItem("city")) {
+  updateCity(localStorage.getItem("city"))
+    .then((data) => updateUI(data))
+    .catch((err) => console.log(err));
+}
